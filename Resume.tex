@@ -1,0 +1,290 @@
+%-------------------------------------
+% LaTeX Resume for Software Engineers
+% Author : Leslie Cheng
+% License : MIT
+%-------------------------------------
+% https://github.com/lcfyi/software-resume-template
+\documentclass[letterpaper,12pt]{article}[leftmargin=*]
+\input{glyphtounicode}
+
+\pdfgentounicode=1
+
+\usepackage[empty]{fullpage}
+\usepackage{enumitem}
+\usepackage{ifxetex}
+\ifxetex
+  \usepackage{fontspec}
+  \usepackage[xetex]{hyperref}
+\else
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \usepackage[pdftex]{hyperref}
+\fi
+\usepackage{fontawesome}
+\usepackage[sfdefault,light]{FiraSans}
+\usepackage{anyfontsize}
+\usepackage{xcolor}
+\usepackage{tabularx}
+
+%-------------------------------------------------- SETTINGS HERE --------------------------------------------------
+% Header settings
+\def \fullname {Alan Yuan}
+\def \subtitle {}
+
+\def \linkedinicon {\faLinkedin}
+\def \linkedinlink {https://linkedin.com/in/jalnyn/}
+\def \linkedintext {/JaLnYn}
+
+\def \phoneicon {\faPhone}
+\def \phonetext {+1-647-918-8482}
+
+\def \emailicon {\faEnvelope}
+\def \emaillink {mailto:alan.yuan.jly@gmail.com}
+\def \emailtext {alan.yuan.jly@gmail.com}
+
+\def \githubicon {\faGithub}
+\def \githublink {https://github.com/JaLnYn}
+\def \githubtext {/JaLnYn}
+
+\def \websiteicon {\faGlobe}
+\def \websitelink {https://google.com/}
+\def \locationtext {763 Bay Street, Toronto, ON}
+
+\def \headertype {\doublecol} % \singlecol or \doublecol
+
+% Misc settings
+\def \entryspacing {-0pt}
+
+\def \bulletstyle {\faAngleRight}
+
+% Define colours
+\definecolor{primary}{HTML}{000000}
+\definecolor{secondary}{HTML}{ff6924}
+\definecolor{accent}{HTML}{263238}
+\definecolor{links}{HTML}{1565C0}
+
+%------------------------------------------------------------------------------------------------------------------- 
+
+% Defines to make listing easier
+\def \linkedin {\linkedinicon \hspace{3pt}\href{\linkedinlink}{\linkedintext}}
+\def \phone {\phoneicon \hspace{3pt}{ \phonetext}}
+\def \email {\emailicon \hspace{3pt}\href{\emaillink}{\emailtext}}
+\def \github {\githubicon \hspace{3pt}\href{\githublink}{\githubtext}}
+\def \location {\websiteicon \hspace{3pt}{\locationtext}}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.1in}
+
+% Define the link colours
+\hypersetup{
+    colorlinks=true,
+    urlcolor=links,
+}
+
+% Set the margin alignment 
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-------------------------
+% Custom commands
+
+% Sections
+\renewcommand{\section}[2]{\vspace{5pt}
+  \colorbox{secondary}{\color{white}\raggedbottom\normalsize\textbf{{#1}{\hspace{7pt}#2}}}
+}
+
+% Entry start and end, for spacing
+\newcommand{\resumeEntryStart}{\begin{itemize}[leftmargin=2.5mm]}
+\newcommand{\resumeEntryEnd}{\end{itemize}\vspace{\entryspacing}}
+
+% Itemized list for the bullet points under an entry, if necessary
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=4.5mm]}
+\newcommand{\resumeItemListEnd}{\end{itemize}}
+
+% Resume item
+\renewcommand{\labelitemii}{\bulletstyle}
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+% Entry with title, subheading, date(s), and location
+\newcommand{\resumeEntryTSDL}[4]{
+  \vspace{-1pt}\item[]
+    \begin{tabularx}{0.97\textwidth}{X@{\hspace{60pt}}r}
+      \textbf{\color{primary}#1} & {\firabook\color{accent}\small#2} \\
+      \textit{\color{accent}\small#3} & \textit{\color{accent}\small#4} \\
+    \end{tabularx}\vspace{-6pt}
+}
+
+% Entry with title and date(s)
+\newcommand{\resumeEntryTD}[2]{
+  \vspace{-2pt}\item[]
+    \begin{tabularx}{0.97\textwidth}{X@{\hspace{60pt}}r}
+      \textbf{\color{primary}#1} & {\firabook\color{accent}\small#2} \\
+    \end{tabularx}\vspace{-6pt}
+}
+
+% Entry for special (skills)
+\newcommand{\resumeEntryS}[2]{
+  \item[]\small{
+    \textbf{\color{primary}#1 }{ #2 \vspace{-6pt}}
+  }
+}
+
+% Double column header
+\newcommand{\doublecol}[6]{
+  \begin{tabularx}{\textwidth}{Xr}
+    {
+      \begin{tabular}[c]{l}
+        \fontsize{35}{45}\selectfont{\color{primary}{{\textbf{\fullname}}}} \\
+        {\textit{\subtitle}} % You could add a subtitle here
+      \end{tabular}
+    } & {
+      \begin{tabular}[c]{l@{\hspace{1.5em}}l}
+        {\small#4} & {\small#1} \\
+        {\small#5} & {\small#2} \\
+        {\small#6} & {\small#3}
+      \end{tabular}
+    }
+  \end{tabularx}
+}
+
+% Single column header
+\newcommand{\singlecol}[6]{
+  \begin{tabularx}{\textwidth}{Xr}
+    {
+      \begin{tabular}[b]{l}
+        \fontsize{35}{45}\selectfont{\color{primary}{{\textbf{\fullname}}}} \\
+        {\textit{\subtitle}} % You could add a subtitle here
+      \end{tabular}
+    } & {
+      \begin{tabular}[c]{l}
+        {\small#1} \\
+        {\small#2} \\
+        {\small#3} \\
+        {\small#4} \\
+        {\small#5} \\
+        {\small#6}
+      \end{tabular}
+    }
+  \end{tabularx}
+}
+
+\begin{document}
+%-------------------------------------------------- BEGIN HERE --------------------------------------------------
+
+%---------------------------------------------------- HEADER ----------------------------------------------------
+
+\headertype{\linkedin}{\github}{}{\phone}{\email}{} % Set the order of items here
+\vspace{-10pt} % Set a negative value to push the body up, and the opposite
+ %-------------------------------------------------- EXPERIENCE --------------------------------------------------
+\section{\faPieChart}{Experience}
+ 
+\resumeEntryStart
+  \resumeEntryTSDL
+    {Software Developer | Centivizer}{ Node.JS: SimplePeer, Socket.io, Axios }{ Summer 2020}{}{}{}
+  \resumeItemListStart
+    \resumeItem {Designed and built server that connects "friends" to a video call with NodeJS and SimplePeer}
+    \resumeItem {Used Socket.io to communicate between the client and backend.}
+    \resumeItem {Connected the server with the database through a RESTful API using the Axios library.}
+  \resumeItemListEnd
+\resumeEntryEnd
+
+
+%-------------------------------------------------- EDUCATION --------------------------------------------------
+\section{\faGraduationCap}{Education} 
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {University of Toronto}{Sep, 2018 -- Jan, 2023}
+      {Candidate for Honours B.S. in Computer Science}{cGPA: 3.8/4.0}
+	\resumeEntryS{Relevant Coursework:} {Introduction to M.L (95), Data Structures and Algorithms (92), Operating Systems (91), Parallel Programming (94), NNs and Deep Learning (96), Intro to AI (97)}
+  \resumeEntryEnd
+
+--https://github.com/JaLnYn/pokerbot
+
+%-------------------------------------------------- PROGRAMMING SKILLS --------------------------------------------------
+\section{\faGears}{Skills}
+\resumeEntryStart
+ \resumeEntryS{Languages } {C/C++, Java, Python, C\#, JavaScript}
+ \resumeEntryS{Tools } {PyTorch, numpy, Firebase, MongoDB, MySQL, SFML, Node.JS, React.JS, React Native}
+\resumeEntryEnd
+
+%-------------------------------------------------- PROJECTS --------------------------------------------------
+\section{\faFlask}{Side Projects}
+  \resumeEntryStart
+    \resumeEntryTSDL
+	  {Q-learning M.L algorithm (to play Snake)}{Python, PyTorch}{Dec, 2020-Jan, 2021}{\href{https://github.com/JaLnYn/}{github.com/JaLnYn/mlsnake}}
+    \resumeItemListStart
+      \resumeItem {Read articles and papers to understand Q-Learning.}
+      \resumeItem {Implemented a Q-learning snake on top of a existing implementation of the snake-game.}
+    \resumeItemListEnd
+  \resumeEntryEnd 
+  \resumeEntryStart
+    \resumeEntryTSDL
+	  {CSC311 (Intro to M.L) Course Competition}{Python, numpy}{Nov, 2020-Dec, 2021}{-}
+    \resumeItemListStart
+	  \resumeItem {Achieved the \textbf{5th highest score} in the competition and a 99\% on the project write-up.}
+      \resumeItem {Chose and implemented a Matrix Factorization algorithm to recommend a selection of movies to users.}
+      \resumeItem {Improved on the SGD training process by adding weight regularization and biases based on paper on a different application.}
+      \resumeItem {Used ensembles to decrease variance ensuring the private score will be similar to that of the validation set.}
+    \resumeItemListEnd
+  \resumeEntryEnd 
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Merchant Sensei Scraper}{ Python: boto3, bs4}{ Dec, 2019-present}{\href{https://merchantsensei.com/}{merchantsensei.com}}{}{}
+    \resumeItemListStart
+	  \resumeItem {Created \textbf{script to scrape the web} for HTMLs and other useful information to be run on EC2s.}
+      \resumeItem {Using Python's threading capabilities, gave script ability to scale with CPU power}
+      \resumeItem {Automated the packaging of the extracted data} 
+      \resumeItem {Sends ZIP files to AWS bucket in a nice ZIP file to minimize storage costs}
+    \resumeItemListEnd
+  \resumeEntryEnd
+
+
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Tron UDP multiplayer}{C++, ncurses}{Sep, 2019-Dec, 2019}{\href{https://github.com/JaLnYn/Tron}{github.com/JaLnYn/Tron}}
+    \resumeItemListStart
+	\resumeItem {Created a four player game for \textbf{local networks} using the UDP network protocol and C++}
+    \resumeItem {Forked timer from the server to ensure the game runs on time}
+    \resumeItem {Utilize epoll for both client and server to monitor the socket as well as the timer (server) and stdin (client)}
+    \resumeItemListEnd
+  \resumeEntryEnd
+
+%  \resumeEntryStart
+%    \resumeEntryTSDL
+%      {Web-Chat | (Hack the North)}{Firebase Realtime DB, Azure M.L. API, ReactJS, JavaScript }{Sep, 2019-Sep, 2019}{\href{https://github.com/JaLnYn/DASH}{github.com/JaLnYn/DASH}}
+%    \resumeItemListStart
+%      \resumeItem {Lead a team of 4 to create a web-chat-app that matches strangers based on their current emotion determined by \textbf{Azure ML API}}
+%      \resumeItem {Built the frontend of the web-app utilizing \textbf{Firebase} and \textbf{ReactJS}\\ }
+%      \resumeItem {Utilized \textbf{Firebase Realtime Database} to easily facilitate the chat rooms}
+%    \resumeItemListEnd
+%  \resumeEntryEnd
+
+  \resumeEntryStart
+    \resumeEntryTSDL
+      {Evolutionary M.L algorithm (to play Snake)}{C++}{Mar, 2018-Apr, 2018}{\href{https://github.com/JaLnYn/Machine-learning-Snake/tree/master/mlGame}{github.com/JaLnYn/Machine-learning-Snake}}
+    \resumeItemListStart
+	  \resumeItem {Read articles and papers to understand and implement the N.E.A.T Evolutionary algorithm with raw C++.}
+      \resumeItem {Tested multiple fitness metrics such as score, survival time, and time between scoring. }
+    \resumeItemListEnd
+  \resumeEntryEnd
+
+%   \resumeEntryStart
+%    \resumeEntryTSDL
+%        {Esoteric Language interpreter}{C}{Nov, 2017 - June, 2018}{\href{https://github.com/JaLnYn/Bf-interpreter}{github.com/JaLnYn/Bf-interpreter}}
+%    \resumeItemListStart
+%      \resumeItem {Utilized recursion and memory management to implement a simple interpreter for the Esoteric Language: BF}
+%    \resumeItemListEnd
+%  \resumeEntryEnd
+    
+  
+ 
+\end{document}
