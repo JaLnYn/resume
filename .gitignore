@@ -1,0 +1,5 @@
+*.out
+*.log
+*.fdb_latexmk
+*.aux
+*.fls
