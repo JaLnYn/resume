@@ -141,6 +141,7 @@
         \resumeItem{Optimized support tool's Ram templates to reduce false positives and failing cases by around \textbf{70\%}}
         \resumeItem{Migrated all 600+ failing regression test cases to the new compilation flow leading to decreaesed build failures}
       \resumeItemListEnd
+      
 % -----------Multiple Positions Heading-----------
 %    \resumeSubSubheading
 %     {Software Engineer I}{Oct 2014 - Sep 2016}
@@ -155,13 +156,13 @@
       {Centivizer}{April 2020 - Sept 2020}
       {Software Developer - Part-time}{Toronto, Ontario}
       \resumeItemListStart
-        \resumeItem{Designed and wrote backend application using \textbf{Node.JS} and \textbf{SimplePeer} to connect users via video call}
-        \resumeItem{Establish communication between client and backend for video feed using \textbf{socket.io}}
+        \resumeItem{Designed and wrote backend application using \textbf{socket.io}, \textbf{Node.JS} and \textbf{SimplePeer} to connect users via video}
         \resumeItem{Integrated video feature with user database through \textbf{RESTful API} using the \textbf{Axios} Library}
+        \resumeItem{Decreased server load by re-working notification system to use a socket based approach}
     \resumeItemListEnd
    \resumeSubHeadingListEnd
 
-% \section{Other Experiences}
+% \section{Research Experiences}
 %     \resumeSubheading
 %       {PAIR Lab }{Sept 2021 - present}
 %       {Lab Assistant - Part-time}{Toronto, Ontario}
@@ -178,7 +179,7 @@
     \resumeSubheading
       {University of Toronto}{3.82 cGPA}
       {BSc Computer Science Specialist, Major in Mathematics}{Sep. 2018 -- May 2023}
-            \resumeItem{\textbf{Relevant Coursework}: Data Structures and Algorithms (A+), Operating Systems (A+), Parallel Programming (A+), Neural Networks and Deep Learning (A+), Intro to AI (A+), Algorithm Design, Analysis \& Complexity (A)}
+            \resumeItem{\textbf{Relevant Coursework}: Data Structures and Algorithms (A+), Operating Systems (A+), Parallel Programming (A+), Neural Networks and Deep Learning (A+), Intro to AI (A+), Introduction to Machine Learning (A+) }
   \resumeSubHeadingListEnd
 
 
@@ -187,28 +188,34 @@
 \section{Projects}
     \resumeSubHeadingListStart
         \resumeProjectHeading
-          {\textbf{PAIR lab assistant} $|$ Private repo}{Sep 2021 -- present}
+          {\textbf{PAIR lab assistant} $|$ Private repo (paper under review)}{Sep 2021 -- present}
           \resumeItemListStart
-            \resumeItem{Collaborate with \textbf{Nvidia} to build on top of Isaacsim creating a robot reinforcment learning \textbf{benchmark}}
+            \resumeItem{Built on top of Nvidia's Isaacsim to create a robot reinforcment learning \textbf{benchmark}}
             \resumeItem{Implementing a task-flow and enviroment randomizer for \textbf{causal reward} based research}
-            \resumeItem{Creating physics scenes and testing \textbf{reinforcment learning} algorithms to be used as a benchmark}
-            \resumeItem{Setup and trained a variaty of robots including \textbf{frankas and mobile manipulators}}
+            \resumeItem{Utilize \textbf{pytorch} and \textbf{PPO} implementations such as \textbf{rslrl}, \textbf{rlgames} and \textbf{rllib}}
           \resumeItemListEnd
 
-        % \resumeProjectHeading
-        %   {\textbf{CFR Minimization (Kuhn Poker, Tic-Tac-Toe and Coup)} $|$ Link: \href{https://github.com/JaLnYn/pokerbot}{GitHub}}{May 2021 -- present}
-        %   \resumeItemListStart
-        %     \resumeItem{Developing a general framework to train R.L. agents using CFR, CFR+ and MCCFR to find the nash equilibrium}
-        %     \resumeItem{Implemented each of the algorithms to play tic-tac-toe, Kuhn poker and Coup}
-        %   \resumeItemListEnd
+        \resumeProjectHeading
+        % {\textbf{(Deep QLearning snake))} $|$ Link: \href{https://github.com/JaLnYn/pokerbot}{GitHub}}{May 2021 -- present}
+        {\textbf{Deep QLearning snake} $|$ Private repo}{June 2021 -- July 2021}
+        \resumeItemListStart
+          \resumeItem{Utilized \textbf{pytorch} to write a Deep Q-Learning algorithm}
+          \resumeItem{Played the snake game with DQL agent reaching a high score of \textbf{40} after \textbf{5} minuites of training}
+        \resumeItemListEnd
 
+
+        %\resumeProjectHeading
+        %{\textbf{CFR Minimization (Kuhn Poker, Tic-Tac-Toe and Coup)} $|$ Link: \href{https://github.com/JaLnYn/pokerbot}{GitHub}}{May 2021 -- July 2021}
+        %\resumeItemListStart
+        %  \resumeItem{Developing a general framework to find nash equilibrium using CFR, CFR+ and MCCFR}
+        %  \resumeItem{Implemented each of the algorithms to play tic-tac-toe and Kuhn poker}
+        %\resumeItemListEnd
 
         \resumeProjectHeading
           {\textbf{Tenant-Landlord Matching App} $|$ Links: \href{https://github.com/JaLnYn/pk2_ser}{server-side}, \href{https://github.com/JaLnYn/pk2_cli}{client-side}}{Aug 2020 -- June 2021}
           \resumeItemListStart
             \resumeItem{Fullstack development of an mobile application to match landlords and tenants}
             \resumeItem{Constructed front-end using \textbf{React Native} and common packages such as \textbf{React Navigation} and \textbf{axios}}
-            \resumeItem{Features: Authentication, Images upload utilizing \textbf{multer}, Tinder-like swiping, instant messaging with \textbf{Socket.io}}
             \resumeItem{Utilized \textbf{Node.js}, \textbf{GraphQL}, and database \textbf{Postgres} to construct backend}
           \resumeItemListEnd
 
@@ -216,8 +223,8 @@
           {\textbf{CaNetDa: Deep learning for GeoGuesser in Canada} $|$ Link: \href{https://github.com/st-tran/CSC413-Project}{GitHub}}{Jan 2021 -- April 2021}
           \resumeItemListStart
             \resumeItem{Utilized a deep learning approach utilizing multiple deep learning techniques to have an AI play GeoGuesser.}
-            \resumeItem{Utilized \textbf{ResNet}, \textbf{EfficientNet} and \textbf{Vision Transformer} to predict the location}
-            \resumeItem{With our approach, a accuracy of \textbf{60\%} was consistently achieved}
+            \resumeItem{Utilized a \textbf{pytorch} implementation of \textbf{ResNet}, \textbf{EfficientNet} and \textbf{Vision Transformer} to predict the location}
+            \resumeItem{With our approach, a accuracy of \textbf{60\%} was consistently achieved out of 13 options}
           \resumeItemListEnd
       \resumeProjectHeading
         {\textbf{Tron UDP multiplayer} $|$ Link: \href{https://github.com/JaLnYn/Tron}{GitHub}}{Sep 2019 -- Dec 2019}
