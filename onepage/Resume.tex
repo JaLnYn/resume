@@ -1,0 +1,275 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-5pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-8pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-9pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Alan Yuan} \\ \vspace{1pt}
+    \small \href{mailto:alan.yuan.jly@gmail.com}{\underline{alan.yuan.jly@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/jalnyn}{\underline{linkedin.com/in/jalnyn}} $|$
+    \href{https://github.com/jalnyn}{\underline{github.com/jalnyn}}
+\end{center}
+
+
+
+%-----------EXPERIENCE-----------
+\vspace{-20pt}
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Amazon}{Jun 2023 -- Aug 2023}
+      {Software Developer - Intern}{Toronto, Ontario}
+      \resumeItemListStart
+        % \resumeItem{Due to network latency and processing time, consolidation recommendations take over \textbf{150ms} to retrieve}
+        \resumeItem{Designed and implemented a precompute layer to increase recommendations speed by \textbf{99\%} from 150ms}
+        \resumeItem{Created automated data analysis tool to ensure predictions are above \textbf{75\%}}
+      \resumeItemListEnd
+    \resumeSubheading
+    {PAIR Lab}{Sep 2021 -- Present}{Researcher}{Toronto, Ontario}
+      \resumeItemListStart
+        \resumeItem{Exploring the usage of \textbf{VLM} assisted \textbf{LLM} in long term planning through constant re-evaluation of plans}
+        \resumeItem{Utilizing a combination of \textbf{MPC} and \textbf{LLMs} to complete complex low level tasks using \textbf{MuJoCo} MPC}
+        \resumeItem{Assisted with \textbf{Orbit}, a robot reinforcement learning framework built on top of NVIDIA's \textbf{Isaacsim}}
+        \resumeItem{Designed and built \textbf{GPU} parallelized state systems with low overhead allowing a \textbf{4x} speedup over the cpu solution}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Amazon}{May 2022 -- Aug 2022}
+      {Software Developer - Intern}{Vancouver, British Columbia}
+      \resumeItemListStart
+        \resumeItem{Engineered a modular microservice in \textbf{Java} to send notifications to customer of cashback on select products}
+        \resumeItem{Utilize \textbf{AWS} webservices such as \textbf{Lambda}, \textbf{SQS} and \textbf{SNS} to ensure scalability of the notification system}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Intel}{May 2021 -- May 2022}
+      {Software Engineer - Intern}{Toronto, Ontario}
+      \resumeItemListStart
+        \resumeItem{Developed support software to generate 4000+ of completely random test-cases for edge-case testing}
+        \resumeItem{Optimized support tool's Ram templates to reduce false positives and failing cases by around \textbf{70\%}}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    \resumeSubheading
+      {Centivizer}{Apr 2020 - Sep 2020}
+      {Software Developer - Part-time}{Toronto, Ontario}
+      \resumeItemListStart
+        \resumeItem{Designed and wrote backend application using \textbf{Node.JS} and \textbf{SimplePeer} to connect users via video call}
+    \resumeItemListEnd
+   \resumeSubHeadingListEnd
+
+% \section{Research Experiences}
+%     \resumeSubheading
+%       {PAIR Lab }{Sept 2021 - present}
+%       {Lab Assistant - Part-time}{Toronto, Ontario}
+%       \resumeItemListStart
+%         \resumeItem{Develop randomized scenes for Reinforcement Robot Learning }
+%     \resumeItemListEnd
+
+%   \resumeSubHeadingListEnd
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Toronto}{--- cGPA}
+      {MSc in Applied Computing}{Sept 2023 - Dec 2024}
+
+    \resumeSubheading
+      {University of Toronto}{3.84 cGPA}
+      {HBSc Computer Science Specialist, Major in Mathematics}{Sep. 2018 -- May 2023}
+    % \resumeItem{\textbf{Relevant Coursework}: Knowledge Representation (in progress), Parallel Programming (A+), Neural Networks and Deep Learning (A+), Algorithm Design, Analysis \& Complexity (A)}
+  \resumeSubHeadingListEnd
+\section{Publications \small{(* equal contribution)}}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \item{
+    \small{M. Skreta*, Z. Zhou*,  \textbf{J. L. Yuan}*, K. Darvish, A. Aspuru-Guzik, A. Garg. Lidless Eye and Silver Tongue: using Vision and Language for Adaptive Task Replanning, \textit{Submitted to (ICLR) 2024 [under review]}}
+    }
+  \end{itemize}\vspace{-20pt}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item{
+    \small{M. Mittal, C. Yu, Q. Yu, J. Liu, N. Rudin, D. Hoeller, \textbf{J. L. Yuan}, R. Singh, Y. Guo, H. Mazhar, A. U. Mandlekar, B. Babich, G. State, M. Hutter, A. Garg. ORBIT: A Unified Simulation Framework for Interactive Robot Learning Environments, \textit{(RA-L) 2023}}
+    }
+ \end{itemize}
+\vspace{-20pt}
+ 
+
+
+
+\section{Projects}
+    \resumeSubHeadingListStart
+      % \resumeProjectHeading
+      %   {\textbf{Planning long horizon tasks with LLMs (pair lab)} $|$ Private repo}{Sep 2023 -- present}
+      %   \resumeItemListStart
+      %     \resumeItem{Exploring the usage of \textbf{VLM} assisted \textbf{LLM} in long term planning through constant re-evaluation of plans}
+      %     \resumeItem{Utilizing a combination of \textbf{MPC} and \textbf{LLMs} to complete complex low level tasks using \textbf{MuJoCo} MPC}
+      %     \resumeItem{Exploring meta controllers to assist multi-policy agents to plan long horizon tasks using \textbf{sparse rewards}}
+      %   \resumeItemListEnd
+      % % \resumeProjectHeading
+      % %   {\textbf{Multi-Stage Structured Task Learning Using
+      % %   Semantics} $|$ Private repo}{May 2023 -- Sept 2023}
+      % %   \resumeItemListStart
+      % %     \resumeItem{Utilzing a combination of a meta-planners and low level reinforcement learning to solve \textbf{long horizon tasks}}
+      % %     \resumeItem{Restricted rewards to only \textbf{sparse rewards} to increase ease of definition}
+      % %   \resumeItemListEnd
+      % \resumeProjectHeading
+      %   {\textbf{Orbit (pair lab)} [open source]$|$ Link: \href{https://isaac-orbit.github.io/}{website}}{Jan 2022 -- May 2023}
+      %   \resumeItemListStart
+      %     \resumeItem{Designed and built \textbf{GPU} parallelized state systems with low overhead allowing a \textbf{4x} speedup over the cpu solution}
+      %     \resumeItem{Utilize pytorch and PPO libraries such as rslrl, rlgames and rllib to train various robots on various environments}
+      %     \resumeItem{Implemented features including rigid/articulated body environments for benchmarks and robot configurations}
+      %   \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{CaNetDa: Deep Learning for GeoGuesser in Canada} $|$ Link: \href{https://github.com/st-tran/CSC413-Project}{GitHub}}{Jan 2021 -- Apr 2021}
+          \resumeItemListStart
+            \resumeItem{Mined dataset and trained an ensemble of \textbf{ResNet}, \textbf{EfficientNet} and \textbf{Vision Transformer}.}
+            \resumeItem{With our approach, a accuracy of \textbf{60\%} was consistently achieved out of 13 options}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Machine Learning Course Competition} $|$ Link: \href{https://github.com/JaLnYn/csc311_final_project/tree/main/project/starter_code}{GitHub}}{Sep 2020 -- Dec 2020}
+          % \href{https://github.com/st-tran/CSC413-Project}{GitHub}
+          \resumeItemListStart
+            \resumeItem{Achieved the 5th highest score in the unsupervised movie recommendation competition.}
+          \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Tron UDP Multiplayer} $|$ Link: \href{https://github.com/JaLnYn/Tron}{GitHub}}{Sep 2019 -- Dec 2019}
+        \resumeItemListStart
+          \resumeItem{Created a four player game for local networks using the \textbf{UDP} network protocol and C\texttt{++}}
+          \resumeItem{Utilize \textbf{epoll} for both client and server to monitor the socket as well as the timer (server) and stdin (client)}
+        \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{BF-Interpreter} $|$ Link: \href{https://github.com/JaLnYn/Bf-interpreter}{GitHub}}{Mar 2018 -- Nov 2018}
+        \resumeItemListStart
+          \resumeItem{Built a BF shell that runs all example BF programs found on \href{https://en.wikipedia.org/wiki/Brainfuck}{\underline{Wikipedia}} in C}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+    
+  %-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Deep Neural Networks, Large Language Models, Latent Diffusion Models, Robotics} \\
+     \textbf{Languages}{: Python, C/C++, JavaScript, Java, C\#} \\
+     \textbf{Tools}{: Huggingface, Oobabooga, PyTorch, Git, React Native, Node.js, MongoDB, SQL (Postgres), Numpy, GraphQL} \\
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
+
