@@ -106,166 +106,184 @@
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
-    \textbf{\Huge \scshape Alan Yuan} \\ \vspace{1pt}
-    \small \href{mailto:alan.yuan.jly@gmail.com}{\underline{alan.yuan.jly@gmail.com}} $|$ 
+    \textbf{\Huge \scshape Alan (Jia Lin) Yuan} \\ \vspace{1pt}
+    \small \href{mailto:alan.yuan.jly@gmail.com}{\underline{alan.yuan.jly@gmail.com}} $|$
     \href{https://linkedin.com/in/jalnyn}{\underline{linkedin.com/in/jalnyn}} $|$
-    \href{https://github.com/jalnyn}{\underline{github.com/jalnyn}}
+    \href{https://github.com/jalnyn}{\underline{github.com/jalnyn}} $|$
+    \href{https://scholar.google.com/citations?user=o-YyMz4AAAAJ&hl=en}{\underline{scholar.google.com/}}
 \end{center}
 
 
-
+%-----------EDUCATION-----------
 \vspace{0pt}
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Toronto}{--- cGPA}
-      {MScAC}{Sep 2023 - Jan 2025}
+      {University of Toronto}{4.0 cGPA}
+      {MSc in Applied Computing (A.I.)}{Sept 2023 -- Dec 2024}
 
     \resumeSubheading
       {University of Toronto}{3.84 cGPA}
       {HBSc Computer Science Specialist, Major in Mathematics}{Sep. 2018 -- May 2023}
-            %\resumeItem{\textbf{Relevant Coursework}: Data Structures and Algorithms (A+), Operating Systems (A+), Parallel Programming (A+), Neural Networks and Deep Learning (A+), Intro to AI (A+), Introduction to Machine Learning (A+), Algorithm Design, Analysis \& Complexity (A)}
+      \resumeItemListStart
+        \resumeItem{\textbf{Relevant Coursework}: Parallel Programming (A+), Neural Networks and Deep Learning (A+), Algorithm Design, Analysis \& Complexity (A), Operating Systems (A+), Intro to AI (A+)}
+      \resumeItemListEnd
   \resumeSubHeadingListEnd
 
 
+%-----------PUBLICATIONS-----------
+\vspace{-8pt}
 \section{Publications}
-\begin{itemize}[leftmargin=0.15in, label={}]
+\begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt]
     \item{
-    \small{M. Mittal, C. Yu, Q. Yu, J. Liu, N. Rudin, D. Hoeller, \textbf{J. L. Yuan}, R. Singh, Y. Guo, H. Mazhar, A. U. Mandlekar, B. Babich, G. State, M. Hutter, A. Garg. ORBIT: A Unified Simulation Framework for Interactive Robot Learning Environments, \textit{IEEE Robotics and Automation Letters (RA-L) 2023}}
+    \small{M. Skreta*, Z. Zhou*, \textbf{J. L. Yuan}*, K. Darvish, A. Aspuru-Guzik, A. Garg. RePLan: Robotic Replanning with Perception and Language Models. \textit{arXiv:2401.04157}, 2024.}
     }
- \end{itemize}\vspace{-15pt}
+    \item{
+    \small{M. Mittal, C. Yu, Q. Yu, J. Liu, N. Rudin, D. Hoeller, \textbf{J. L. Yuan}, R. Singh, Y. Guo, H. Mazhar, A. U. Mandlekar, B. Babich, G. State, M. Hutter, A. Garg. ORBIT: A Unified Simulation Framework for Interactive Robot Learning Environments. \textit{IEEE Robotics and Automation Letters (RA-L)}, 2023.}
+    }
+\end{itemize}
 
-
-\section{Projects}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-        {\textbf{Planning long horizon tasks with LLMs}}{Sep 2023 -- present}
-        \resumeItemListStart
-          \resumeItem{Exploring the usage of LLMs in long term planning through re-evaluation of plans}
-          \resumeItem{Reproducing the \textbf{Language to Rewards for Robotic Skill Synthesis} paper using \textbf{MuJoCo} MPC}
-        \resumeItemListEnd
-      \resumeProjectHeading
-        {\textbf{Contextual image generationg}}{May 2023 -- present}
-        \resumeItemListStart
-          \resumeItem{Implemented a niave, text to text implementation of multi modal image generation}
-          \resumeItem{Reproducing the \textbf{Generating Images with Multimodal Language Models}}
-        \resumeItemListEnd
-      \resumeProjectHeading
-        {\textbf{Multi-Stage Structured Task Learning Using Semantics with RoboSEAL}}{Feb 2023 -- Sep 2023}
-        \resumeItemListStart
-          \resumeItem{Contributed to \textbf{Orbit} by writing a low overhead (10\%) semantics system to represent semantics and physics sim}
-          \resumeItem{Utilized a modified version of the \textbf{Structured Exploration with Achievements} agent for long horizon learning}
-        \resumeItemListEnd
-      \resumeProjectHeading
-        {\textbf{Deep QLearning Snake} $|$ Link: \href{https://github.com/JaLnYn/pokerbot}{GitHub}}{May 2021 -- Dec 2021}
-        \resumeItemListStart
-          \resumeItem{Utilized \textbf{PyTorch} to write a Deep Q-Learning snake agent reaching a high score of \textbf{40} after \textbf{5} minutes of training}
-        \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{CaNetDa: Deep Learning for GeoGuesser in Canada} $|$ Link: \href{https://github.com/st-tran/CSC413-Project}{GitHub}}{Jan 2021 -- Apr 2021}
-          \resumeItemListStart
-            \resumeItem{Mined dataset and trained an ensemble of \textbf{ResNet}, \textbf{EfficientNet} and \textbf{Vision Transformer}.}
-            \resumeItem{With our approach, a accuracy of \textbf{60\%} was consistently achieved out of 13 options}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{Machine Learning Course Competition} $|$ Link: \href{https://github.com/JaLnYn/csc311_final_project/tree/main/project/starter_code}{GitHub}}{Sep 2020 -- Dec 2020}
-          % \href{https://github.com/st-tran/CSC413-Project}{GitHub}
-          \resumeItemListStart
-            \resumeItem{Achieved the 5th highest score in the unsupervised movie recommendation competition.}
-            \resumeItem{Improved on the SGD training process by adding weight regularization and biases based on reseach papers}
-          \resumeItemListEnd
-      \resumeProjectHeading
-        {\textbf{Tron UDP Multiplayer} $|$ Link: \href{https://github.com/JaLnYn/Tron}{GitHub}}{Sep 2019 -- Dec 2019}
-        \resumeItemListStart
-          \resumeItem{Created a four player game for local networks using the \textbf{UDP} network protocol and C\texttt{++}}
-          \resumeItem{Utilize \textbf{epoll} for both client and server to monitor the socket as well as the timer (server) and stdin (client)}
-        \resumeItemListEnd
-      \resumeProjectHeading
-        {\textbf{BF-Interpreter} $|$ Link: \href{https://github.com/JaLnYn/Bf-interpreter}{GitHub}}{Mar 2018 -- Nov 2018}
-        \resumeItemListStart
-          \resumeItem{Built a BF shell that runs all example BF programs found on \href{https://en.wikipedia.org/wiki/Esoteric_programming_language\#Binary_lambda_calculus}{\underline{Wikipedia}} in C}
-        \resumeItemListEnd
-    \resumeSubHeadingListEnd
-%-----------EDUCATION-----------
-%
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, C/C++, JavaScript, Java, C\#} \\
-     \textbf{Tools}{: Git, React Native, Node.js, MongoDB, SQL (Postgres), PyTorch, Numpy, GDB, GraphQL} \\
-    }}
- \end{itemize}
 
 %-----------EXPERIENCE-----------
+\vspace{-8pt}
 \section{Work Experience}
   \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Instacart}{Feb 2025 -- Present}
+      {Software Developer}{Toronto, Ontario}
+      \resumeItemListStart
+        \resumeItem{Consolidated cross-account/cross-region \textbf{RDS/Aurora} backup lifecycle, saving \textbf{\$1M/year} in AWS costs.}
+        \resumeItem{Built automated snapshot restore and validation workflows, enabling proactive detection of unrecoverable backups.}
+        \resumeItem{Scaled \textbf{tier 0/1} databases (IOPS, CPU instances, replicas) for holiday peak, resulting in a stable on-call season.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Unilever}{April 2024 -- Dec 2024}
+      {Machine Learning Engineer - Intern}{Toronto, Ontario}
+      \resumeItemListStart
+        \resumeItem{Trained \textbf{time-series transformer} models to \textbf{forecast sales} with \textbf{PyTorch}, increasing accuracy by 5\%.}
+        \resumeItem{\textbf{Optimized promotion times and prices} with augmented genetic algorithms \textbf{GNGSA}.}
+        \resumeItem{Utilized novel algorithm \textbf{GNGSA} increasing convergence iterations 70\% and hypervolume AUC by 50\%.}
+        \resumeItem{Implemented multi-thread processing to increase data pipeline speeds by \textbf{50\%}.}
+      \resumeItemListEnd
+
     \resumeSubheading
       {Amazon}{Jun 2023 -- Aug 2023}
       {Software Developer - Intern}{Toronto, Ontario}
       \resumeItemListStart
-        \resumeItem{Designed and implemented a precompute layer to increase consolidation recommendations by 99\%}
-        \resumeItem{Created automated data analysis tool to ensure predictions are above 75\%}
+        \resumeItem{Designed a \textbf{precompute} layer using \textbf{Apache Spark} to increase recommendation speed by \textbf{99\%} from 150ms.}
+        \resumeItem{Built data pipelines to ingest updated data and retrain models on a scheduled basis.}
+        \resumeItem{Created automated data analysis tool to ensure predictions are above \textbf{75\%} accuracy.}
       \resumeItemListEnd
-    \resumeSubheading
-    {PAIR Lab}{Sep 2021 -- Present}{Researcher}{Toronto, Ontario}
-      \resumeItemListStart
-        \resumeItem{Built on top of \textbf{NVIDIA}'s Isaacsim to create a robot reinforcment learning \textbf{framework}}
-        \resumeItem{Utilized state-of-the-art SEA algorithm to solve \textbf{long-horizon robotics tasks}}
-        \resumeItem{Creating robot learning environments and using PPO to create \textbf{reinforcment learning} benchmarks}
-      \resumeItemListEnd
+
     \resumeSubheading
       {Amazon}{May 2022 -- Aug 2022}
       {Software Developer - Intern}{Vancouver, British Columbia}
       \resumeItemListStart
-        \resumeItem{Engineered a modular microservice in \textbf{Java} to send notifications to customer of cashback on select products}
-        \resumeItem{Utilize \textbf{AWS} webservices such as \textbf{Lambda}, \textbf{SQS} and \textbf{SNS} to ensure scalability of the notification system}
+        \resumeItem{Engineered a modular microservice in \textbf{Java} to send cashback notifications to customers on select products.}
+        \resumeItem{Utilized \textbf{AWS} web services such as \textbf{Lambda}, \textbf{SQS} and \textbf{SNS} to ensure scalability.}
+        \resumeItem{Integrated service into data pipeline utilizing Amazon internal language \textbf{Datapath}.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Intel}{May 2021 -- May 2022}
       {Software Engineer - Intern}{Toronto, Ontario}
       \resumeItemListStart
-        \resumeItem{Developed support software to generate 4000+ of completely random test-cases for edge-case testing}
-        \resumeItem{Optimized support tool's Ram templates to reduce false positives and failing cases by around \textbf{70\%}}
+        \resumeItem{Developed \textbf{C++} \textbf{fuzz testing} tooling generating 4000+ randomized programs to verify compiler correctness against uncompiled execution.}
+        \resumeItem{Optimized support tool's RAM templates to reduce false positives and failing cases by around \textbf{70\%}.}
       \resumeItemListEnd
-      
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
 
     \resumeSubheading
-      {Centivizer}{Apr 2020 - Sep 2020}
+      {Centivizer}{Apr 2020 -- Sep 2020}
       {Software Developer - Part-time}{Toronto, Ontario}
       \resumeItemListStart
-        \resumeItem{Designed and wrote backend application using \textbf{Node.JS} and \textbf{SimplePeer} to connect users via video call}
-    \resumeItemListEnd
-   \resumeSubHeadingListEnd
+        \resumeItem{Designed backend application using \textbf{Node.JS} and \textbf{SimplePeer} to facilitate \textbf{real-time video streams}.}
+        \resumeItem{Integrated video system with main \textbf{React} site and \textbf{NoSQL} database.}
+      \resumeItemListEnd
 
-% \section{Research Experiences}
-%     \resumeSubheading
-%       {PAIR Lab }{Sep 2021 - present}
-%       {Lab Assistant - Part-time}{Toronto, Ontario}
-%       \resumeItemListStart
-%         \resumeItem{Develop randomized scenes for Reinforcement Robot Learning }
-%     \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
-%   \resumeSubHeadingListEnd
 
+%-----------PROJECTS-----------
+\vspace{-8pt}
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{WIDE: Websocket-IDE} $|$ \href{https://github.com/JaLnYn/websocket-ide}{GitHub}}{Sep 2024 -- present}
+          \resumeItemListStart
+            \resumeItem{Architecting and developing a websocket-based IDE using \textbf{Rust} and \textbf{React} frontend (58 GitHub stars).}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Decomposed Face Generation} $|$ \href{https://github.com/JaLnYn/talkinghead}{GitHub}}{Apr 2024 -- Aug 2024}
+          \resumeItemListStart
+            \resumeItem{Decomposed faces into \textbf{id, pose, emotion embeddings} using \textbf{contrastive learning} approaches.}
+            \resumeItem{Developed architecture combining \textbf{StyleGAN} with multiple embedding spaces for controllable generation.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{RePlan: Robot Planning with LLMs} $|$ \href{https://arxiv.org/abs/2401.04157}{arXiv:2401.04157}}{Sep 2023 -- Aug 2024}
+          \resumeItemListStart
+            \resumeItem{Developed novel system combining \textbf{MPC} and \textbf{MultiModal LLM} for completing high-level robot tasks.}
+            \resumeItem{Created \textbf{MuJoCo} environments for training and evaluating manipulation policies.}
+            \resumeItem{Implemented meta-controllers for \textbf{multi-policy} agents using \textbf{sparse rewards}.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{MultiModal AI Story Teller} $|$ private repo}{Jul 2023 -- Jul 2024}
+          \resumeItemListStart
+            \resumeItem{Built interactive \textbf{socket-based} streaming service serving up to 200+ users a day.}
+            \resumeItem{Managed \textbf{auto-scaling GPU} resources with \textbf{Kubernetes} saving up to 90\% on \textbf{AWS} costs.}
+            \resumeItem{Implemented \textbf{Multimodality} using \textbf{LLMs} and \textbf{Latent Diffusion Models} to build an interactive story teller.}
+            \resumeItem{Utilized NLP techniques to summarize context to reduce context size, reducing inference time by up to 10\%.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Orbit: Robot Learning Framework} $|$ \href{https://isaac-orbit.github.io/}{project-site}}{Jan 2022 -- May 2023}
+          \resumeItemListStart
+            \resumeItem{Core contributor to robotics framework built on \textbf{NVIDIA IsaacSim}, published in \textit{IEEE RA-L}.}
+            \resumeItem{Designed \textbf{GPU-accelerated} state systems achieving a \textbf{4x} speedup over CPU solutions.}
+            \resumeItem{Implemented \textbf{PPO} training pipelines with \textbf{domain randomization} for manipulation tasks.}
+            \resumeItem{Wrote a low-overhead semantics system to represent semantics and physics simulation.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{CaNetDa: Deep Learning for GeoGuesser in Canada} $|$ \href{https://github.com/st-tran/CSC413-Project}{GitHub}}{Jan 2021 -- Apr 2021}
+          \resumeItemListStart
+            \resumeItem{Mined dataset and trained an ensemble of \textbf{ResNet}, \textbf{EfficientNet} and \textbf{Vision Transformer} models.}
+            \resumeItem{Achieved \textbf{47\%} improvement over random agent in predicting province of image in Canada.}
+            \resumeItem{Scraped \textbf{Google Street View} images and used \textbf{Google Maps API} to preprocess images for training.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Deep Q-Learning Snake Agent} $|$ \href{https://github.com/JaLnYn/pokerbot}{GitHub}}{May 2021 -- Dec 2021}
+          \resumeItemListStart
+            \resumeItem{Utilized \textbf{PyTorch} to write a Deep Q-Learning snake agent reaching a high score of \textbf{40} after \textbf{5} minutes of training.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Tron UDP Multiplayer} $|$ \href{https://github.com/JaLnYn/Tron}{GitHub}}{Sep 2019 -- Dec 2019}
+        \resumeItemListStart
+          \resumeItem{Created a four-player game for local networks using the \textbf{UDP network protocol} and C\texttt{++}.}
+          \resumeItem{Utilized \textbf{epoll} for both client and server to monitor the socket, timer (server) and stdin (client).}
+        \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\vspace{-8pt}
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Tech}{: Deep Neural Networks, Large Language Models, Latent Diffusion Models, Reinforcement Learning, Python, C++, JavaScript, Java, Rust} \\
+     \textbf{Tools}{: Huggingface, PyTorch, Git, React, Node.js, MongoDB, SQL, Numpy, GraphQL, NVIDIA IsaacSim, MuJoCo, Kubernetes, AWS, Apache Spark} \\
+    }}
+ \end{itemize}
 
 
 %-------------------------------------------
 \end{document}
-

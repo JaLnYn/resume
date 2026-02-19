@@ -87,7 +87,7 @@
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-9pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -115,23 +115,32 @@
     \textbf{\Huge \scshape Alan (Jia Lin) Yuan} \\ \vspace{1pt}
     \small \href{mailto:alan.yuan.jly@gmail.com}{\underline{alan.yuan.jly@gmail.com}} $|$ 
     \href{https://linkedin.com/in/jalnyn}{\underline{linkedin.com/in/jalnyn}} $|$
-    \href{https://github.com/jalnyn}{\underline{github.com/jalnyn}}
+    \href{https://github.com/jalnyn}{\underline{github.com/jalnyn}} $|$
+    \href{https://scholar.google.com/citations?user=o-YyMz4AAAAJ&hl=en}{\underline{scholar.google.com/}}
 \end{center}
 
 
 
 %-----------EXPERIENCE-----------
-\vspace{-20pt}
+\vspace{-16pt}
 \section{Work Experience}
   \resumeSubHeadingListStart
+
     \resumeSubheading
-      {Unilever}{April 2024 -- Present}
+      {Instacart}{Feb 2025 -- Present}
+      {Software Developer}{Toronto, Ontario}
+      \resumeItemListStart
+        \resumeItem{Consolidated cross-account/cross-region \textbf{RDS/Aurora} backup lifecycle, saving \textbf{\$1M/year} in AWS costs}
+        \resumeItem{Built automated snapshot restore and validation workflows, enabling proactive detection of unrecoverable backups}
+        \resumeItem{Scaled \textbf{tier 0/1} databases (IOPS, CPU instances, replicas) for holiday peak, resulting in a stable on-call season}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Unilever}{April 2024 -- Dec 2024}
       {Machine Learning Engineer - Intern}{Toronto, Ontario}
       \resumeItemListStart
-        \resumeItem{Train \textbf{times-series transfomer} models to \textbf{forecast sales} in various regions with \textbf{PyTorch}. }
-        \resumeItem{\textbf{Optimize sales prices} and promotion weeks with genetic algorithms utilizing \textbf{NGSAII}.}
-        \resumeItem{Increased model accuracy by \textbf{15\%} by modifying model architecture and finetuning hyperparameters.}
-        \resumeItem{Implemented multi-thread processing to increase data pipline speeds by \textbf{150\%}.}
+        \resumeItem{Train \textbf{times-series transfomer} models to \textbf{forecast sales} with \textbf{PyTorch} increasing accuracy by 5\%. }
+        \resumeItem{Optimized promotion times and prices with novel algorithm \textbf{GNGSA}, increasing convergence by 70\% and hypervolume AUC by 50\%.}
+        \resumeItem{Implemented multi-thread processing to increase data pipline speeds by \textbf{50\%}.}
       \resumeItemListEnd
     \resumeSubheading
       {Amazon}{Jun 2023 -- Aug 2023}
@@ -155,8 +164,8 @@
       {Intel}{May 2021 -- May 2022}
       {Software Engineer - Intern}{Toronto, Ontario}
       \resumeItemListStart
-        \resumeItem{Developed support software to generate 4000+ of completely random test-cases for edge-case testing}
-        \resumeItem{Optimized support tool's Ram templates to reduce false positives and failing cases by around \textbf{70\%}}
+        \resumeItem{Built \textbf{C++} \textbf{fuzzy testing} tooling generating 4000+ randomized programs to stress-test compiler correctness}
+        %\resumeItem{Optimized support tool's Ram templates to reduce false positives and failing cases by around \textbf{70\%}}
       \resumeItemListEnd
       
 % -----------Multiple Positions Heading-----------
@@ -172,10 +181,6 @@
     \resumeSubheading
       {Centivizer}{Apr 2020 - Sep 2020}
       {Software Developer - Part-time}{Toronto, Ontario}
-      \resumeItemListStart
-        \resumeItem{Designed backend application using \textbf{Node.JS} and \textbf{SimplePeer} to facilitate \textbf{real-time video streams}}
-        \resumeItem{Integrated video system with main \textbf{React} site and \textbf{NoSQL} database}
-    \resumeItemListEnd
    \resumeSubHeadingListEnd
 
 % \section{Research Experiences}
@@ -187,12 +192,12 @@
 %     \resumeItemListEnd
 
 %   \resumeSubHeadingListEnd
-\vspace{-16pt}
+\vspace{-12pt}
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Toronto}{4.0 cGPA}
-      {MSc in Applied Computing}{Sept 2023 - Dec 2024}
+      {MSc in Applied Computing (A.I.)}{Sept 2023 - Dec 2024}
 
     \resumeSubheading
       {University of Toronto}{3.84 cGPA}
@@ -240,55 +245,64 @@
       %   \resumeItemListEnd
       % \resumeProjectHeading
       %     {\textbf{MultiModal AI Story teller}  $|$ private repo}{Jul 2023 -- Present}
-      %     \resumeItemListStart
-      %       \resumeItem{Implemented \textbf{Multimodality} using \textbf{LLMs} and \textbf{Latent Diffusion Models} to build a interactive story teller.}
-      %       % \resumeItem{Lead efforts to increase \textbf{LLM} efficiency by utilizing SOTA quantization to decrease VRAM usage by 87.5\%.}
-      %       \resumeItem{Utilized NLP techniques to summarize context to reduce context size, reducing inference time by up to 10\%.}
-      %     \resumeItemListEnd
+          % \resumeItemListStart
+          %   \resumeItem{Implemented \textbf{Multimodality} using \textbf{LLMs} and \textbf{Latent Diffusion Models} to build a interactive story teller.}
+          %   % \resumeItem{Lead efforts to increase \textbf{LLM} efficiency by utilizing SOTA quantization to decrease VRAM usage by 87.5\%.}
+          %   \resumeItem{Utilized NLP techniques to summarize context to reduce context size, reducing inference time by up to 10\%.}
+          % \resumeItemListEnd
+
+
       \resumeProjectHeading
-          {\textbf{MultiModal AI Story teller}  $|$ private repo}{Jul 2023 -- Jul 2024}
+          {\textbf{WIDE: Websocket-IDE} $|$ Link: \href{https://github.com/JaLnYn/websocket-ide}{GitHub}}{Sep 2024 -- present}
           \resumeItemListStart
-            \resumeItem{Built interactive \textbf{socket-based} streaming service serving up to 200+ users a day.}
-            \resumeItem{Managed \textbf{auto-scaling GPU} resources with \textbf{Kubernetes} saving up to 90\% on \textbf{AWS} costs.}
-            \resumeItem{Implemented \textbf{Multimodality} using \textbf{LLMs} and \textbf{Latent Diffusion Models} to build a interactive story teller.}
-            \resumeItem{Utilized NLP techniques to summarize context to reduce context size, reducing inference time by up to 10\%.}
+            \resumeItem{Architecting and developing a websocket-based IDE using \textbf{Rust} and \textbf{React} frontend (58 GitHub stars)}
           \resumeItemListEnd
+
       \resumeProjectHeading
-      {\textbf{PAIR Lab} | multiple projects: \href{https://arxiv.org/abs/2401.04157}{\textbf{RePlan}}  $|$ \href{https://isaac-orbit.github.io/}{\textbf{Orbit}}}{Sep 2021 -- Apr 2024}
+          {\textbf{Decomposed Face Generation}  $|$ Link: \href{https://github.com/JaLnYn/talkinghead}{Github}}{Apr 2024 -- May 2024}
+          \resumeItemListStart
+            \resumeItem{Decompose faces into \textbf{id, pose, emotion embeddings} and utilize \textbf{StyleGAN} to re-generate faces.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{PAIR Lab} | multiple projects: \href{https://arxiv.org/abs/2401.04157}{\textbf{RePlan}}  $|$ \href{https://isaac-orbit.github.io/}{\textbf{Orbit}}}{Sep 2021 -- Aug 2024}
         \resumeItemListStart
           \resumeItem{Use of \textbf{MPC}, \textbf{MultiModal LLM} in completing high level robot tasks prompted by text $|$ \href{https://arxiv.org/abs/2401.04157}{\textbf{arXiv:2401.04157}}}
           \resumeItem{Contributed to \textbf{Orbit}, a robot learning framework built on \textbf{NVIDIA Isaacsim}. Published in \textit{RAL} $|$ \href{https://isaac-orbit.github.io/}{\textbf{project-site}}}
-          \resumeItem{Worked on meta-controllers to assist \textbf{multi-policy} agents to plan long horizon tasks using \textbf{sparse rewards}}
+%          \resumeItem{Worked on meta-controllers to assist \textbf{multi-policy} agents to plan long horizon tasks using \textbf{sparse rewards}}
           \resumeItem{Designed and built \textbf{GPU} parallelized state systems with low overhead allowing a \textbf{4x} speedup over the cpu solution}
         \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{CaNetDa: Deep Learning for GeoGuesser in Canada} $|$ Link: \href{https://github.com/st-tran/CSC413-Project}{GitHub}}{Jan 2021 -- Apr 2021}
+          {\textbf{MultiModal AI Story teller}  $|$ private repo}{Jul 2023 -- Jul 2024}
           \resumeItemListStart
-            \resumeItem{Mined dataset and trained an ensemble of \textbf{Computer Vision} models: \textbf{ResNet}, \textbf{EfficientNet} and \textbf{Vision Transformer} resulting in a \textbf{47\%} improvment over random agent in predicting province of image in Canada}
-            \resumeItem{Scraped \textbf{Google Street View} images and used \textbf{Google Maps API} to preprocess images for training}
+            \resumeItem{Managed \textbf{auto-scaling GPU} resources with \textbf{Kubernetes} saving up to 90\% on \textbf{AWS} costs.}
+            \resumeItem{Implemented \textbf{Multimodality} using \textbf{LLMs} and \textbf{Latent Diffusion Models} to build a interactive story teller.}
+            \resumeItem{Utilized NLP techniques to summarize context to reduce context size, reducing inference time by up to \textbf{10\%}.}
           \resumeItemListEnd
+
+
       % \resumeProjectHeading
       %     {\textbf{Machine Learning Course Competition} $|$ Link: \href{https://github.com/JaLnYn/csc311_final_project/tree/main/project/starter_code}{GitHub}}{Sep 2020 -- Dec 2020}
       %     % \href{https://github.com/st-tran/CSC413-Project}{GitHub}
       %     \resumeItemListStart
       %       \resumeItem{Achieved the 5th highest score in the unsupervised movie recommendation competition based on Netflix data}
       %     \resumeItemListEnd
-      \resumeProjectHeading
-        {\textbf{Tron UDP Multiplayer} $|$ Link: \href{https://github.com/JaLnYn/Tron}{GitHub}}{Sep 2019 -- Dec 2019}
-        \resumeItemListStart
-          \resumeItem{Created a four player game for local networks using the \textbf{UDP network protocol} and C\texttt{++}}
-          \resumeItem{Utilize \textbf{epoll} for both client and server to monitor the socket as well as the timer (server) and stdin (client)}
-        \resumeItemListEnd
-      \resumeProjectHeading
-        {\textbf{BF-Interpreter} $|$ Link: \href{https://github.com/JaLnYn/Bf-interpreter}{GitHub}}{Mar 2018 -- Nov 2018}
-        \resumeItemListStart
-          \resumeItem{Built a BF shell that runs all example BF programs found on \href{https://en.wikipedia.org/wiki/Brainfuck}{\underline{Wikipedia}} in C}
-        \resumeItemListEnd
+      % \resumeProjectHeading
+      %   {\textbf{Tron UDP Multiplayer} $|$ Link: \href{https://github.com/JaLnYn/Tron}{GitHub}}{Sep 2019 -- Dec 2019}
+      %   \resumeItemListStart
+      %     \resumeItem{Created a four player game for local networks using the \textbf{UDP network protocol} and C\texttt{++}}
+      %     \resumeItem{Utilize \textbf{epoll} for both client and server to monitor the socket as well as the timer (server) and stdin (client)}
+      %   \resumeItemListEnd
+      % \resumeProjectHeading
+      %   {\textbf{BF-Interpreter} $|$ Link: \href{https://github.com/JaLnYn/Bf-interpreter}{GitHub}}{Mar 2018 -- Nov 2018}
+      %   \resumeItemListStart
+      %     \resumeItem{Built a BF shell that runs all example BF programs found on \href{https://en.wikipedia.org/wiki/Brainfuck}{\underline{Wikipedia}} in C}
+      %   \resumeItemListEnd
 
     \resumeSubHeadingListEnd
     
   %-----------PROGRAMMING SKILLS-----------
-\vspace{-16pt}
+\vspace{-12pt}
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
